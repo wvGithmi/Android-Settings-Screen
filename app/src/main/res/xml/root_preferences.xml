@@ -17,14 +17,21 @@
 
     </PreferenceCategory>
 
-<!--    <PreferenceCategory app:title="Checkboxes">-->
+    <PreferenceCategory app:title="Notifications">
 
-<!--        <CheckBoxPreference-->
-<!--            app:key="checkbox"-->
-<!--            app:title="Checkbox Preference"-->
-<!--            app:summary="Tap to check if on or off" />-->
+        <CheckBoxPreference
+            app:key="sound-checkbox"
+            app:title="Sound" />
 
-<!--    </PreferenceCategory>-->
+        <CheckBoxPreference
+            app:key="app-icon-checkbox"
+            app:title="Badge in app icon" />
+
+        <CheckBoxPreference
+            app:key="lockscreen-checkbox"
+            app:title="Show on lock screen" />
+
+    </PreferenceCategory>
 
 <!--    <PreferenceCategory app:title="Edit Text">-->
 
