@@ -1,54 +1,54 @@
 <PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <PreferenceCategory app:title="Account">
+    <PreferenceCategory app:title="@string/account_header">
 
         <EditTextPreference
-            app:dialogTitle="Enter your username"
+            app:dialogTitle="@string/username_dialog"
             app:key="username"
-            app:title="Username"
+            app:title="@string/username_title"
             app:summary="Click to display a username entry dialog" />
 
         <EditTextPreference
-            app:dialogTitle="Enter your email address"
+            app:dialogTitle="@string/email_dialog"
             app:key="email"
-            app:title="Email"
+            app:title="@string/email_title"
             app:summary="Click to display an email entry dialog" />
 
     </PreferenceCategory>
 
-    <PreferenceCategory app:title="Notifications">
+    <PreferenceCategory app:title="@string/notifications_header">
 
         <SwitchPreferenceCompat
             app:key="sound"
-            app:title="Sound"
+            app:title="@string/sound_title"
             app:defaultValue="true" />
 
         <SwitchPreferenceCompat
             app:key="app-icon"
-            app:title="Badge in app icon"
+            app:title="@string/app_icon_title"
             app:defaultValue="true" />
 
         <SwitchPreferenceCompat
             app:key="lockscreen"
-            app:title="Show on lock screen"
+            app:title="@string/lockscreen_title"
             app:defaultValue="false" />
 
     </PreferenceCategory>
 
-    <PreferenceCategory app:title="Preferences">
+    <PreferenceCategory app:title="@string/preferences_header">
 
         <ListPreference
             app:defaultValue="english(usa)"
             app:entries="@array/language_entries"
             app:entryValues="@array/language_values"
             app:key="language"
-            app:title="Language"
+            app:title="@string/language_title"
             app:useSimpleSummaryProvider="true" />
 
         <SwitchPreferenceCompat
             app:key="darkmode"
-            app:title="Dark mode"
+            app:title="@string/dark_mode_title"
             app:defaultValue="true" />
 
         <ListPreference
@@ -56,7 +56,7 @@
             app:entries="@array/font_size_entries"
             app:entryValues="@array/font_size_values"
             app:key="font-size"
-            app:title="Font size"
+            app:title="@string/font_size"
             app:useSimpleSummaryProvider="true" />
         
     </PreferenceCategory>
