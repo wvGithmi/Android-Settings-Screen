@@ -20,31 +20,46 @@
     <PreferenceCategory app:title="Notifications">
 
         <SwitchPreferenceCompat
-            app:key="sound-checkbox"
+            app:key="sound"
             app:title="Sound"
             app:defaultValue="true" />
 
         <SwitchPreferenceCompat
-            app:key="app-icon-checkbox"
+            app:key="app-icon"
             app:title="Badge in app icon"
             app:defaultValue="true" />
 
         <SwitchPreferenceCompat
-            app:key="lockscreen-checkbox"
+            app:key="lockscreen"
             app:title="Show on lock screen"
             app:defaultValue="false" />
 
     </PreferenceCategory>
 
-<!--    <PreferenceCategory app:title="Edit Text">-->
+    <PreferenceCategory app:title="Preferences">
 
-<!--        <EditTextPreference-->
-<!--            app:dialogTitle="Enter a text"-->
-<!--            app:key="text"-->
-<!--            app:title="EditText Preference"-->
-<!--            app:summary="Click to show a text entry dialog" />-->
+        <ListPreference
+            app:defaultValue="english(usa)"
+            app:entries="@array/language_entries"
+            app:entryValues="@array/language_values"
+            app:key="language"
+            app:title="Language"
+            app:useSimpleSummaryProvider="true" />
 
-<!--    </PreferenceCategory>-->
+        <SwitchPreferenceCompat
+            app:key="darkmode"
+            app:title="Dark mode"
+            app:defaultValue="true" />
+
+        <ListPreference
+            app:defaultValue="medium"
+            app:entries="@array/font_size_entries"
+            app:entryValues="@array/font_size_values"
+            app:key="font-size"
+            app:title="Font size"
+            app:useSimpleSummaryProvider="true" />
+        
+    </PreferenceCategory>
 
 <!--    <PreferenceCategory app:title="@string/messages_header">-->
 
