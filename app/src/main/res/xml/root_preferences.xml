@@ -19,17 +19,20 @@
 
     <PreferenceCategory app:title="Notifications">
 
-        <CheckBoxPreference
+        <SwitchPreferenceCompat
             app:key="sound-checkbox"
-            app:title="Sound" />
+            app:title="Sound"
+            app:defaultValue="true" />
 
-        <CheckBoxPreference
+        <SwitchPreferenceCompat
             app:key="app-icon-checkbox"
-            app:title="Badge in app icon" />
+            app:title="Badge in app icon"
+            app:defaultValue="true" />
 
-        <CheckBoxPreference
+        <SwitchPreferenceCompat
             app:key="lockscreen-checkbox"
-            app:title="Show on lock screen" />
+            app:title="Show on lock screen"
+            app:defaultValue="false" />
 
     </PreferenceCategory>
 
