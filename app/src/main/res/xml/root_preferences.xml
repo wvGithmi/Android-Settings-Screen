@@ -1,0 +1,71 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory app:title="Account">
+
+        <EditTextPreference
+            app:dialogTitle="Enter your username"
+            app:key="username"
+            app:title="Username"
+            app:summary="Click to display a username entry dialog" />
+
+        <EditTextPreference
+            app:dialogTitle="Enter your email address"
+            app:key="email"
+            app:title="Email"
+            app:summary="Click to display an email entry dialog" />
+
+    </PreferenceCategory>
+
+<!--    <PreferenceCategory app:title="Checkboxes">-->
+
+<!--        <CheckBoxPreference-->
+<!--            app:key="checkbox"-->
+<!--            app:title="Checkbox Preference"-->
+<!--            app:summary="Tap to check if on or off" />-->
+
+<!--    </PreferenceCategory>-->
+
+<!--    <PreferenceCategory app:title="Edit Text">-->
+
+<!--        <EditTextPreference-->
+<!--            app:dialogTitle="Enter a text"-->
+<!--            app:key="text"-->
+<!--            app:title="EditText Preference"-->
+<!--            app:summary="Click to show a text entry dialog" />-->
+
+<!--    </PreferenceCategory>-->
+
+<!--    <PreferenceCategory app:title="@string/messages_header">-->
+
+<!--        <EditTextPreference-->
+<!--            app:key="signature"-->
+<!--            app:title="@string/signature_title"-->
+<!--            app:useSimpleSummaryProvider="true" />-->
+
+<!--        <ListPreference-->
+<!--            app:defaultValue="reply"-->
+<!--            app:entries="@array/reply_entries"-->
+<!--            app:entryValues="@array/reply_values"-->
+<!--            app:key="reply"-->
+<!--            app:title="@string/reply_title"-->
+<!--            app:useSimpleSummaryProvider="true" />-->
+
+<!--    </PreferenceCategory>-->
+
+<!--    <PreferenceCategory app:title="@string/sync_header">-->
+
+<!--        <SwitchPreferenceCompat-->
+<!--            app:key="sync"-->
+<!--            app:title="@string/sync_title" />-->
+
+<!--        <SwitchPreferenceCompat-->
+<!--            app:dependency="sync"-->
+<!--            app:key="attachment"-->
+<!--            app:summaryOff="@string/attachment_summary_off"-->
+<!--            app:summaryOn="@string/attachment_summary_on"-->
+<!--            app:title="@string/attachment_title" />-->
+
+<!--    </PreferenceCategory>-->
+
+</PreferenceScreen>
